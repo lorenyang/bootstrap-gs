@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--[if lt IE 9]>
+          <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    <!-- <！-- 一定不要忘记引入bootstrap 的样式文件-->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <title>Bootstrap 栅格系统</title>
+
+
+    <style>
+        .row>div {
+            height: 100px;
+            background-color: purple;
+        }
+
+        .row div:nth-child(3) {
+            background-color: pink;
+        }
+
+        span {
+            font-size: 50px;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col-md-3">左侧</div>
+          <！-- 偏移的份数 就是 12-两个盒子的份数=6-->
+    <!-- <div class="col-md-3 col-md-offset-6">右侧</div>
+        </div> -->
+
+    <!-- <div class="row">
+           <！-- 如果只有一个盒子 那么就偏移=（12 -8）/2 -->
+    <!-- <div class="col-md-8 col-md-offset-2">中间盒子</div>
+        </div> -->
+
+    <!-- <div class="row">
+            <div class="col-lg-4 col-lg-push-8">左侧</div>
+            <div class="col-lg-8 col-lg-pull-4">右侧</div>
+        </div> -->
+
+    <div class="row">
+        <div class="col-xs-3">
+            <span class="visible-lg">我会显示哦</span>
+        </div>
+
+        <div class="col-xs-3">2</div>
+        <div class="col-xs-3 hidden-md hidden-xs">我会变魔术哦</div>
+        <div class="col-xs-3">4</div>
+    </div>
+    </div>
+</body>
+
+</html>
